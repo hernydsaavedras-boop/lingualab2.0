@@ -1,0 +1,163 @@
+
+    .btn {
+        background: #ffffff;
+        color: #ff6f00;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ffe1c6;
+    }
+
+    section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h2 {
+        color: #ff6f00;
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(10px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+</head>
+
+<body>
+
+<!-- ================== HERO ================== -->
+<header>
+    <h1>LinguaLab – Plataforma de Prácticas Multilingües</h1>
+    <p>Apoyo integral para estudiantes internacionales en su proceso de aprendizaje de idiomas.</p>
+    <a href="#registro" class="btn">Quiero participar</a>
+</header>
+
+<!-- ================== ¿QUÉ ES LINGUALAB? ================== -->
+<section id="que-es">
+    <h2>¿Qué es LinguaLab?</h2>
+    <p>
+        LinguaLab es una iniciativa de la Universidad Global Europea diseñada para acompañar a estudiantes 
+        internacionales en su integración lingüística y cultural. A través de actividades guiadas, retos semanales 
+        de comunicación, materiales interactivos y tutorías personalizadas, la plataforma permite desarrollar 
+        habilidades reales en distintos idiomas.
+    </p>
+</section>
+
+<!-- ================== OBJETIVOS ================== -->
+<section id="objetivos">
+    <h2>Objetivos del programa</h2>
+    <ul>
+        <li>Mejorar la competencia comunicativa en varios idiomas.</li>
+        <li>Favorecer la integración cultural de estudiantes internacionales.</li>
+        <li>Proporcionar acompañamiento académico y lingüístico constante.</li>
+        <li>Fomentar la práctica real a través de retos semanales.</li>
+        <li>Ofrecer recursos y tutorías personalizadas según necesidades individuales.</li>
+    </ul>
+</section>
+
+<!-- ================== ACTIVIDADES Y BENEFICIOS ================== -->
+<section id="actividades">
+    <h2>Actividades y beneficios</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Retos semanales</h3>
+            <p>Conversaciones prácticas diseñadas para mejorar fluidez y confianza.</p>
+        </div>
+
+        <div class="card">
+            <h3>Tutorías personalizadas</h3>
+            <p>Agenda de sesiones con tutores expertos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Material de lectura y pronunciación</h3>
+            <p>Recursos descargables para reforzar gramática y fonética.</p>
+        </div>
+
+        <div class="card">
+            <h3>Asistente virtual 24/7</h3>
+            <p>Acompañamiento continuo mediante un agente inteligente integrado.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================== AGENTE DE IA ================== -->
+<section id="agente">
+    <h2>Asistente inteligente</h2>
+    <p>Puedes integrar aquí tu agente virtual (IA) mediante iframe o script.</p>
+
+    <!-- Pega aquí el iframe de tu agente de IA -->
+    <div style="background:#fff; padding:20px; border-radius:10px; text-align:center; border:1px dashed #aaa;">
+        <p><em>Ejemplo: Inserta aquí tu <strong>iframe</strong> del asistente.</em></p>
+    </div>
+</section>
+
+
+<!-- ================== FORMULARIO DE REGISTRO ================== -->
+<section id="registro">
+    <h2>Registro</h2>
+    <p>Completa el siguiente formulario para unirte al programa LinguaLab.</p>
+
+    <div style="background:#fff; padding:20px; border-radius:10px; border:1px dashed #aaa;">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScRh1J8PQE9ujf9Ha4doBtxnt6xB2QHSvCWor47IBC8pSAZhw/viewform?embedded=true" 
+            width="640" height="1262" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </div>
+</section>
+
+<!-- ================== FOOTER ================== -->
+<footer>
+    Universidad Global Europea — Prototipo académico para el curso de Automatización de Procesos.
+</footer>
+
+<!-- ================== JS ================== -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+
+</body>
+</html>
+
