@@ -1,3 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinguaLab – Plataforma de Prácticas Multilingües</title>
+
+<!-- CHAT N8N (corregido y en el lugar correcto) -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+        webhookUrl: 'https://hernylittlefingers.app.n8n.cloud/webhook/88343122-1c92-4743-a379-504255a2ced4/chat' 
+    });
+</script>
+
+<!-- ================== ESTILOS ================== -->
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #faf7f2;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(135deg, #ff914d, #ffb36b);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+        animation: fadeIn 1.5s ease;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease;
+    }
 
     .btn {
         background: #ffffff;
